@@ -18,6 +18,6 @@ spark_df = spark.read.format('parquet').load(file_path)
 | `notebooks/writeOptimizedData/writeOptimizedData_v1.py` | Read Delta and write Delta. Register the table. |
 | `notebooks/readWithPandas/readWithPandas_v1.py` | Spark, Pandas Core, and Pandas API on Spark. |
 | `notebooks/starterNotebook/starterNotebook_v1.py` | The same read and write, with nothing else. |
-| `notebooks/readAndWriteTable/readAndWriteTable_v1.py` | Read a table from the Databricks database and save it back as a table. |
+| `notebooks/readAndWriteUnityCatalog/readAndWriteUnityCatalog_v1.py` | Read a table directly from Unity Catalog and save it back to Unity Catalog. |
 
 Run `mountAzureDataLakeStorage_v1.py` first. It creates `/mnt/adls-<storageaccount><environment>-raw` and `-optimized`. Replace `<tenant-id>` and point the secret-scope widgets at your own Key Vault secrets. The notebook does not contain a real tenant id, storage account, or secret.
